@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./css/graficos.css" />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="topo">
+      <h2>front-end</h2>
+    </div>
+    <section class="container">
+      <aside class="aside">
+        <ul>
+          <a href="./homepage.html"><li>Home</li> </a>
+          <a href="./03-formatacao-de-texto.html" target="meu_iframe"
+            ><li>iframe</li>
+          </a>
+          <a href="/02-listas-e-links.html" target="meu_iframe"
+            ><li>lista de links</li>
+          </a>
+        </ul>
+      </aside>
+      <div class="conteudo">
+        <h1>Elementos gráficos</h1>
+
+        <div id="grafico-01">
+          <img class="filtro" src="./images/coffee-square.jpg" alt="café" />
+        </div>
+
+        <!-- <div id="grafico-02"></div>
+
+        <div id="imagem-vetorial">
+          <img src="./images/coffee.svg" alt="café " />
+        </div>
+
+        <div>
+          <canvas id="canvas"></canvas>
+        </div> -->
+      </div>
+      <div class="iframes">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/rk9WA1PXsYs"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+        <iframe name="meu_iframe"></iframe>
+      </div>
+    </section>
+    <footer>
+      <p>desenvolvido por : ...</p>
+    </footer>
+    <script>
+      var canvas = document.getElementById('canvas');
+      var ctx = canvas.getContext('2d');
+      ctx.fillStyle = '#00FF99';
+      ctx.fillRect(80, 0, 100, 80);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Círculo*/
+
+#grafico-01 {
+  /* background-color: brown; */
+  width: 400px;
+  height: 400px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+#grafico-01 img {
+  width: 100%;
+  height: auto;
+}
+
+/* Triângulo */
+#grafico-02 {
+  background: transparent;
+  border-style: solid;
+  border-width: 60px 0 60px 120px;
+  border-color: transparent transparent transparent blue;
+  width: 60px;
+}
+
+#imagem-vetorial {
+  width: 100px;
+}
+
+#canvas {
+  height: 300px;
+  width: 300px;
+}
+
+.container {
+  display: flex;
+  gap: 100px;
+  flex-wrap: wrap;
+}
+
+.aside {
+  width: 300px;
+  height: auto;
+  background: #d3d3d3dd;
+}
+.topo {
+  color: white;
+  text-align: center;
+  width: 100%;
+  padding: 20px;
+  background: #191919;
+}
+.conteudo {
+  margin: 50px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  gap: 20px;
+  height: 100vh;
+}
+
+footer {
+  width: 100%;
+  padding: 10px;
+  color: white;
+  text-align: center;
+  background: #191919;
+}
+#grafico-01 {
+  filter: drop-shadow(8px 8px 6px #333);
+}
+
+.filtro {
+  filter: grayscale(100%) blur(5px);
+}
+
+.filtro:hover {
+  filter: grayscale(0%) brightness(50%);
+  cursor: pointer;
+}
+
+.iframes {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 40px;
+  overflow: hidden;
+}
