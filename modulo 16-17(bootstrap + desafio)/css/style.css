@@ -50,7 +50,8 @@ header .row ul li a:hover {
   background: #bb1a1a;
   color: #fff;
 }
-#contato button {
+#contato button,
+#cadastro button {
   background: #bb1a1a;
   color: #fff;
 }
