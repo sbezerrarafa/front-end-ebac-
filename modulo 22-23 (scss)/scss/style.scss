@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,300&display=swap');
+
+$dark: #292929;
+$ligth: #fff;
+
+@import 'global';
+
+// mix de estilos
+@mixin theme($theme: #ee5) {
+  border: 1px solid $theme;
+}
+
+// extender uma classe dentro da outra
+
+%classe-para-extender {
+  background-color: blueviolet;
+  padding: 10px 5px;
+}
+
+//  biblioteca de matematica do scss
+
+// @use 'sass:math';
+
+.container {
+  max-width: 1060px;
+  margin: 0 auto;
+}
+.header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin: 40px 0;
+  color: $ligth;
+  width: 500px;
+}
+.header img {
+  width: 30%;
+  border-radius: 200px;
+}
+.img-principal {
+  @extend %classe-para-extender;
+  @include theme(#fff);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: $ligth;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.listagem-secundaria {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.listagem-secundaria li {
+  max-width: 340px;
+}
+.listagem-secundaria li p {
+  color: $ligth;
+}
+.listagem-secundaria li img {
+  width: 100%;
+  object-fit: cover;
+}
+.listagem-secundaria li button {
+  padding: 10px 20px;
+  color: $ligth;
+  border: none;
+  border-radius: 4px;
+  background: #cf649b;
+  font-size: 18px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+// opa
+.teste {
+  font-size: 15px;
+}
