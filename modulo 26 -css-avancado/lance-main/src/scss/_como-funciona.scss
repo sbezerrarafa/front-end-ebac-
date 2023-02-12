@@ -1,0 +1,15 @@
+#como-funciona {
+  background-color: $font-color-primary;
+
+  .steps {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    &__item {
+      text-align: center;
+      width: 180px;
+    }
+  }
+}

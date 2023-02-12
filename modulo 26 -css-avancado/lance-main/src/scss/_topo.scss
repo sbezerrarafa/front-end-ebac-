@@ -1,0 +1,31 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+  }
+  nav a {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: $font-color-primary;
+    position: relative;
+  }
+}
+.nav__item:hover {
+  color: #f58220;
+  animation-name: toTop;
+  animation-duration: 1s;
+}
+
+@keyframes toTop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -1rem;
+  }
+}

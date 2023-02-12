@@ -1,0 +1,15 @@
+#sobre {
+  border-radius: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  margin: 2rem auto;
+  padding: 0 2rem 2rem;
+  width: 100%;
+  h1 {
+    font-size: 3rem;
+    color: $color-secondary;
+  }
+  p {
+    font-size: 1.6rem;
+    color: $font-color-primary;
+  }
+}
