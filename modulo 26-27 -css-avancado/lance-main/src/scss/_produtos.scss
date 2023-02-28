@@ -4,6 +4,12 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
+    @media (max-width: 1025px) {
+      grid-template-columns: repeat(2, 2fr);
+    }
+    @media (max-width: 769px) {
+      grid-template-columns: 2fr;
+    }
     @media (max-width: 600px) {
       grid-template-columns: 1fr;
     }
